@@ -1,0 +1,53 @@
+.svg-animation-container {
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 24px;
+    margin: auto;
+    height: 500px;
+    border-radius: 20%;
+}
+
+.svg-animation-container svg {
+    width: 100%
+}
+
+#bgelement {
+    animation: changeColor 3s infinite alternate;
+}
+
+@keyframes changeColor {
+    0% {
+        fill: red;
+    }
+    100% {
+        fill: blue;
+    }
+}
+
+#Soccerball {
+    animation: bounce 1s infinite alternate ease-out;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+#Shoe {
+    animation: rotates 2s infinite alternate;
+    transform-origin: right;
+    transform-box: fill-box;
+}
+
+@keyframes rotates {
+    10% {
+        transform: rotate(10deg)
+    }
+    70% {
+        transform: rotate(-5deg);
+    }
+}
